@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="p-4 mx-auto">
+        <div class="justify-content-center d-flex card-column">
+            <div class="col-sm-3 p-2 border border-info">
+                <div style="display: grid;grid-template-columns: repeat(4,minmax(0,1fr));gap: 5px">
+                    <input readonly class="p-2 mb-2" id="input" style="grid-column: span 4">
+
+                    <button type="button" class="operators btn btn-outline-info" value="+">+</button>
+
+                    <button type="button" class="operators btn btn-outline-info" value="-">-</button>
+
+                    <button type="button" class="operators btn btn-outline-info" value="*">&times;</button>
+
+                    <button type="button" class="operators btn btn-outline-info" value="/">&divide;</button>
+
+                    <button type="button" class="numbers btn btn-light" value="1">1</button>
+
+                    <button type="button" class="numbers btn btn-light" value="2">2</button>
+
+                    <button type="button" class="numbers btn btn-light" value="3">3</button>
+
+                    <button type="button" id="result" class="btn btn-light" style="grid-row: span 4">=</button>
+
+                    <button type="button" class="numbers btn btn-light" value="4">4</button>
+
+                    <button type="button" class="numbers btn btn-light" value="5">5</button>
+
+                    <button type="button" class="numbers btn btn-light" value="6">6</button>
+
+                    <button type="button" class="numbers btn btn-light" value="7">7</button>
+
+                    <button type="button" class="numbers btn btn-light" value="8">8</button>
+
+                    <button type="button" class="numbers btn btn-light" value="9">9</button>
+
+                    <button type="button" class="numbers btn btn-light" value="0">0</button>
+
+                    <button type="button" id="decimal" class="btn btn-light flex-grow-1" value=".">.</button>
+
+                    <button type="button" class="btn btn-light flex-grow-1" id="clear" value="all-clear">ac</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./calculator.js"></script>
+</html>
